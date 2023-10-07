@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Movie Modal Task</title>
 </head>
@@ -27,8 +28,44 @@
   </div>
   
     <div class="backDrop" id="backDrop"></div>
-    <div class="ourModal" id="ourModal"></div>
-    
+    <div class="ourModal" id="ourModal">
+      <div class="card">
+        <div class="card-header">
+            <h2 class="m-0">Add Movie Details
+
+                <i class="fas fa-times float-right"></i>
+            </h2>
+        </div>
+        <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="movieTitle">Movie Title</label>
+                <input type="text" id="movieTitle" class="form-control">
+              </div> 
+              <div class="form-group">
+                <label for="movieUrl">Movie Url</label>
+                <input type="text" id="movieUrl" class="form-control">
+              </div>  
+              <div class="form-group">
+                <label for="movieRating">Movie Rating</label>
+                <!-- <input type="number" min="1" max="5" id="movieRating" class="form-control"> -->
+                <select class="form-control" id="movieRating">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>  
+                </select>
+              </div> 
+              <div class="text-right">
+                <button class="btn btn-info" type="submit">Add Movie</button>
+                <button class="btn btn-danger" type="button">Cancel</button>
+              </div>
+            </form>
+        </div>
+      </div> 
+    </div>
+
    <script src="./assets/js/app.js"></script>
 </body>
 </html>

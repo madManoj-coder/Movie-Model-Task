@@ -7,6 +7,39 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    cursor: pointer;
+    display: none;
     height: 100vh;
     background-color: rgba(0,0,0,0.7);
+}
+
+.backDrop.active{
+    display: block;
+}
+
+.ourModal.active{
+    display: block;
+}
+
+.ourModal{
+    position: fixed;
+    height:300px;
+    width:50%;
+    background-color: #fff;
+    top:30%;
+    left:20%;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.ourModal .card-header h2{
+    position: relative;
+}
+
+.ourModal .card-header h2 i{
+    position: absolute;
+    top:4px;
+    right:15px;
+    cursor: pointer;
 }
