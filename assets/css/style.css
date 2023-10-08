@@ -13,13 +13,14 @@ body{
     background-color: rgba(0,0,0,0.7);
 }
 
+.ourModal.active{
+    display: block;
+}
+
 .backDrop.active{
     display: block;
 }
 
-.ourModal.active{
-    display: block;
-}
 
 .ourModal{
     position: fixed;
@@ -43,3 +44,4 @@ body{
     right:15px;
     cursor: pointer;
 }
+
