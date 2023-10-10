@@ -44,6 +44,7 @@ const templating = (arr) => {
     
 }
 
+templating(movieArr);
 
 const onAddBtn = () => {
     backDrop.classList.toggle("active")
@@ -70,7 +71,6 @@ const onSubmitForm = (eve) => {
      cl(movieArr);
      movieForm.reset();
      onAddBtn();
-     templating(movieArr);
 }
 
 movieForm.addEventListener("submit", onSubmitForm);
